@@ -1,8 +1,8 @@
 import { ProjectPosts } from "app/components/projectList";
 
 export const metadata = {
-  title: "Projects",
-  description: "Check out My Projects",
+  title: "Blog",
+  description: "Read my blog.",
 };
 
 export default function Page() {

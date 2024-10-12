@@ -50,11 +50,7 @@ function getMDXData(dir) {
 }
 
 export function getProjectPosts() {
-  const posts = getMDXData(
-    path.join(process.cwd(), "app", "projects", "posts")
-  );
-  console.log("Projects fetched:", posts); // Log the fetched projects
-  return posts;
+  return getMDXData(path.join(process.cwd(), "app", "projects", "posts"));
 }
 
 export function formatDate(date: string, includeRelative = false) {
