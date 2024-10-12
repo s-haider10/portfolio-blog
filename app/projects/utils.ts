@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
 
 type Metadata = {
   title: string;
@@ -50,29 +49,12 @@ function getMDXData(dir) {
   });
 }
 
-// export function getProjectPosts() {
-//   const posts = getMDXData(
-//     path.join(process.cwd(), "app", "projects", "posts")
-//   );
-//   console.log("Projects fetched:", posts); // Log the fetched projects
-//   return posts;
-// }
 export function getProjectPosts() {
-  const postsDirectory = path.join(process.cwd(), "app/projects/posts");
-  const fileNames = fs.readdirSync(postsDirectory);
-
-  return fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.mdx$/, "");
-    const fullPath = path.join(postsDirectory, fileName);
-    const fileContents = fs.readFileSync(fullPath, "utf8");
-    const { data: metadata, content } = matter(fileContents);
-
-    return {
-      slug,
-      metadata,
-      content,
-    };
-  });
+  const posts = getMDXData(
+    path.join(process.cwd(), "app", "projects", "posts")
+  );
+  console.log("Projects fetched:", posts); // Log the fetched projects
+  return posts;
 }
 
 export function formatDate(date: string, includeRelative = false) {
