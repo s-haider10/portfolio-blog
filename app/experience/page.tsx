@@ -3,7 +3,7 @@ import React from "react";
 export default function Page() {
   return (
     <section className="min-h-screen p-6">
-      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 transition duration-300 ease-in-out">
+      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition duration-300 ease-in-out">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200">
             Syed Ali Haider
@@ -47,7 +47,7 @@ export default function Page() {
           <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             Education
           </h2>
-          <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+          <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
             <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
               New York University
             </h3>
@@ -71,7 +71,7 @@ export default function Page() {
             Experience
           </h2>
           <div className="space-y-4">
-            <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+            <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
               <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                 Khudi Ventures
               </h3>
@@ -90,7 +90,7 @@ export default function Page() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+            <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
               <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                 Reckitt Benckiser (MENA IT&D)
               </h3>
@@ -113,7 +113,7 @@ export default function Page() {
             Research Projects
           </h2>
           <div className="space-y-4">
-            <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+            <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
               <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                 Kiwi+
               </h3>
@@ -141,7 +141,7 @@ export default function Page() {
             Awards & Leadership
           </h2>
           <div className="space-y-4">
-            <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+            <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
               <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">
                 Dean's Undergraduate Research Fund
               </h3>
@@ -159,7 +159,7 @@ export default function Page() {
           <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             Skills
           </h2>
-          <div className="bg-white dark:bg-gray-700 p-4 rounded-lg transition duration-300 shadow-sm">
+          <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg transition duration-300">
             <p className="text-gray-600 dark:text-gray-400">
               <strong>Programming Languages:</strong> Python, Java, C, C++, SQL,
               JavaScript, HTML/CSS
