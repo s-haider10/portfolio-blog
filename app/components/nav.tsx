@@ -11,7 +11,7 @@ const navItems = {
     name: "Projects",
   },
   "/experience": {
-    name: "Experience",
+    name: "CV",
   },
 };
 
