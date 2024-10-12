@@ -11,9 +11,9 @@ export default async function sitemap() {
   }));
 
   // Get project data for the sitemap
-  let projects = getProjectPosts().map((post) => ({
-    url: `${baseUrl}/projects/${post.slug}`, // Update the URL path as needed
-    lastModified: post.metadata.publishedAt,
+  let projects = getProjectPosts().map((project) => ({
+    url: `${baseUrl}/projects/${project.slug}`, // Update the URL path as needed
+    lastModified: project.metadata.publishedAt,
   }));
 
   // Add main routes for the sitemap

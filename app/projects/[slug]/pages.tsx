@@ -5,7 +5,10 @@ import { baseUrl } from "app/sitemap";
 
 export async function generateStaticParams() {
   let posts = getProjectPosts();
-
+  console.log(
+    "Generated slugs:",
+    posts.map((post) => post.slug)
+  ); // Log slugs
   return posts.map((post) => ({
     slug: post.slug,
   }));
