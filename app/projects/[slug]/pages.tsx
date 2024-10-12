@@ -5,10 +5,7 @@ import { baseUrl } from "app/sitemap";
 
 export async function generateStaticParams() {
   let posts = getProjectPosts();
-  console.log(
-    "Generated slugs:",
-    posts.map((post) => post.slug)
-  ); // Log generated slugs
+
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -57,10 +54,6 @@ export function generateMetadata({ params }) {
 export default function Project({ params }) {
   let post = getProjectPosts().find((post) => post.slug === params.slug);
 
-  // Add logging to check the current slug and the found post
-  console.log("Looking for post with slug:", params.slug); // Log the current slug
-  console.log("Found post:", post); // Log the found post
-
   if (!post) {
     notFound();
   }
@@ -73,7 +66,7 @@ export default function Project({ params }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "BlogPosting",
+            "@type": "ProjectPosting",
             headline: post.metadata.title,
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
@@ -84,7 +77,7 @@ export default function Project({ params }) {
             url: `${baseUrl}/projects/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "My Portfolio",
+              name: "Syed Ali Haider",
             },
           }),
         }}

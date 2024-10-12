@@ -40,13 +40,18 @@ export default function Page() {
           <strong>machine learning</strong> seeks to unravel these mysteries,
           blending theoretical inquiry with practical application.
         </p>
+        <p className="mb-5">
+          <strong>Projects</strong>
+        </p>
+        <div className="my-8">
+          <ProjectPosts />
+        </div>
       </div>
-
+      <p className="mb-5">
+        <strong>Blogs</strong>
+      </p>
       <div className="my-8">
         <BlogPosts />
-      </div>
-      <div className="my-8">
-        <ProjectPosts />
       </div>
     </section>
   );
