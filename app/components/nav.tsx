@@ -10,7 +10,7 @@ const navItems = {
   "/projects": {
     name: "Projects",
   },
-  "/experience/experience/page.tsx": {
+  "/experience": {
     name: "Experience",
   },
 };
