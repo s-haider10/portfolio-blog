@@ -3,19 +3,12 @@ import { CustomMDX } from "app/components/mdx";
 import { formatDate, getExperiencePosts } from "app/experience/utils";
 import { baseUrl } from "app/sitemap";
 
-export async function generateStaticParams() {
-  let posts = getExperiencePosts();
-
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
-export function generateMetadata({ params }) {
-  let post = getExperiencePosts().find((post) => post.slug === params.slug);
+export function generateMetadata() {
+  let post = getExperiencePosts()[0]; // Fetch the first (and only) experience post
   if (!post) {
     return;
   }
+
   let {
     title,
     publishedAt: publishedTime,
@@ -34,7 +27,7 @@ export function generateMetadata({ params }) {
       description,
       type: "article",
       publishedTime,
-      url: `${baseUrl}/experience/${post.slug}`,
+      url: `${baseUrl}/experience`,
       images: [
         {
           url: ogImage,
@@ -50,8 +43,8 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function Blog({ params }) {
-  let post = getExperiencePosts().find((post) => post.slug === params.slug);
+export default function Experience() {
+  let post = getExperiencePosts()[0]; // Fetch the first (and only) experience post
 
   if (!post) {
     notFound();
@@ -73,7 +66,7 @@ export default function Blog({ params }) {
             image: post.metadata.image
               ? `${baseUrl}${post.metadata.image}`
               : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${baseUrl}/experience/${post.slug}`,
+            url: `${baseUrl}/experience`,
             author: {
               "@type": "Person",
               name: "My Portfolio",
