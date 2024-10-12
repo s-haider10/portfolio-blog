@@ -1,29 +1,32 @@
 import Link from "next/link";
-import { formatDate, getProjectData } from "app/projects/utils";
+import { formatDate, getProjectPosts } from "app/project/utils";
 
-export function ProjectList() {
-  let allProjects = getProjectData();
+export function ProjectPosts() {
+  let allBlogs = getProjectPosts();
 
   return (
     <div>
       {allProjects
-        .sort((a, b) =>
-          new Date(b.metadata.publishedAt) > new Date(a.metadata.publishedAt)
-            ? 1
-            : -1
-        ) // Sort by date
-        .map((project) => (
+        .sort((a, b) => {
+          if (
+            new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)
+          ) {
+            return -1;
+          }
+          return 1;
+        })
+        .map((post) => (
           <Link
-            key={project.slug}
+            key={post.slug}
             className="flex flex-col space-y-1 mb-4"
-            href={`/projects/${project.slug}`}
+            href={`/project/${post.slug}`}
           >
             <div className="w-full flex flex-col md:flex-row space-x-0 md:space-x-2">
               <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
-                {formatDate(project.metadata.publishedAt, false)}
+                {formatDate(post.metadata.publishedAt, false)}
               </p>
               <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {project.metadata.title}
+                {post.metadata.title}
               </p>
             </div>
           </Link>
