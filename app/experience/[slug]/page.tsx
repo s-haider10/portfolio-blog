@@ -16,7 +16,6 @@ export function generateMetadata({ params }) {
   if (!post) {
     return;
   }
-
   let {
     title,
     publishedAt: publishedTime,
