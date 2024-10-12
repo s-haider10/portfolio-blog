@@ -1,11 +1,8 @@
-// app/components/projectList.tsx
-
 import Link from "next/link";
-import { getProjectData } from "app/projects/utils";
-import { formatDate } from "app/projects/utils"; // Reuse the formatDate function
+import { formatDate, getProjectData } from "app/projects/utils";
 
-export const ProjectList = () => {
-  const allProjects = getProjectData();
+export function ProjectList() {
+  let allProjects = getProjectData();
 
   return (
     <div>
@@ -33,4 +30,4 @@ export const ProjectList = () => {
         ))}
     </div>
   );
-};
+}

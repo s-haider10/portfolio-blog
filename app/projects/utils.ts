@@ -12,23 +12,28 @@ type Metadata = {
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   let match = frontmatterRegex.exec(fileContent);
-  if (!match) {
-    return { metadata: {}, content: fileContent }; // Return empty metadata if no front matter
+  let content = fileContent.replace(frontmatterRegex, "").trim();
+
+  // Initialize metadata with default values
+  let metadata: Metadata = {
+    title: "",
+    description: "",
+    publishedAt: "",
+  };
+
+  if (match) {
+    let frontMatterBlock = match[1];
+    let frontMatterLines = frontMatterBlock.trim().split("\n");
+
+    frontMatterLines.forEach((line) => {
+      let [key, ...valueArr] = line.split(": ");
+      let value = valueArr.join(": ").trim();
+      value = value.replace(/^['"](.*)['"]$/, "$1"); // Remove quotes
+      metadata[key.trim() as keyof Metadata] = value;
+    });
   }
 
-  let frontMatterBlock = match[1];
-  let content = fileContent.replace(frontmatterRegex, "").trim();
-  let frontMatterLines = frontMatterBlock.trim().split("\n");
-  let metadata: Partial<Metadata> = {};
-
-  frontMatterLines.forEach((line) => {
-    let [key, ...valueArr] = line.split(": ");
-    let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); // Remove quotes
-    metadata[key.trim() as keyof Metadata] = value;
-  });
-
-  return { metadata: metadata as Metadata, content };
+  return { metadata, content };
 }
 
 // Function to get all markdown files in the specified directory
@@ -59,7 +64,7 @@ function getMDXData(dir: string) {
 
 // Function to get project posts data
 export function getProjectData() {
-  return getMDXData(path.join(process.cwd(), "app", "projects", "posts"));
+  return getMDXData(path.join(process.cwd(), "app", "projects", "[id]"));
 }
 
 // Format date function (you can reuse the one from your blog utils)
