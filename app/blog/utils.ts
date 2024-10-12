@@ -1,17 +1,22 @@
 import fs from "fs";
 import path from "path";
 
+// Define a Metadata type for project details
 type Metadata = {
   title: string;
+  description: string;
   publishedAt: string;
-  summary: string;
-  image?: string;
 };
 
+// Function to parse the front matter and content from a markdown file
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
   let match = frontmatterRegex.exec(fileContent);
-  let frontMatterBlock = match![1];
+  if (!match) {
+    return { metadata: {}, content: fileContent }; // Return empty metadata if no front matter
+  }
+
+  let frontMatterBlock = match[1];
   let content = fileContent.replace(frontmatterRegex, "").trim();
   let frontMatterLines = frontMatterBlock.trim().split("\n");
   let metadata: Partial<Metadata> = {};
@@ -26,16 +31,19 @@ function parseFrontmatter(fileContent: string) {
   return { metadata: metadata as Metadata, content };
 }
 
-function getMDXFiles(dir) {
+// Function to get all markdown files in the specified directory
+function getMDXFiles(dir: string) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
 }
 
-function readMDXFile(filePath) {
+// Function to read and parse a markdown file
+function readMDXFile(filePath: string) {
   let rawContent = fs.readFileSync(filePath, "utf-8");
   return parseFrontmatter(rawContent);
 }
 
-function getMDXData(dir) {
+// Function to get the data of all markdown files in the specified directory
+function getMDXData(dir: string) {
   let mdxFiles = getMDXFiles(dir);
   return mdxFiles.map((file) => {
     let { metadata, content } = readMDXFile(path.join(dir, file));
@@ -49,10 +57,12 @@ function getMDXData(dir) {
   });
 }
 
-export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "app", "blog", "posts"));
+// Function to get project posts data
+export function getProjectPosts() {
+  return getMDXData(path.join(process.cwd(), "app", "projects", "posts"));
 }
 
+// Format date function (you can reuse the one from your blog utils)
 export function formatDate(date: string, includeRelative = false) {
   let currentDate = new Date();
   if (!date.includes("T")) {
