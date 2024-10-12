@@ -9,6 +9,7 @@ export default function Page() {
         alt="Profile Picture"
       />
 
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter"> </h1>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Syed Ali Haider
       </h1>
@@ -37,18 +38,6 @@ export default function Page() {
           <strong>quantum computing</strong> and{" "}
           <strong>machine learning</strong> seeks to unravel these mysteries,
           blending theoretical inquiry with practical application.
-        </p>
-        <p className="mb-4">
-          I believe that the most innovative solutions emerge from collaboration
-          and diverse perspectives. Whether through academic research, product
-          development, or engaging discussions, I aim to foster a dynamic
-          environment where ideas can flourish.
-        </p>
-        <p className="mb-4">
-          If you're passionate about exploring the frontiers of knowledge or if
-          you're intrigued by the confluence of technology and philosophy, I
-          invite you to connect and join me on this exciting journey of
-          discovery.
         </p>
       </div>
 
