@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Page() {
   return (
-    <section className="min-h-screen p-6">
-      <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition duration-300 ease-in-out">
+    // <section className="min-h-screen p-6">
+      // <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6 transition duration-300 ease-in-out">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200">
             Syed Ali Haider
@@ -171,7 +171,7 @@ export default function Page() {
             </p>
           </div>
         </section>
-      </div>
-    </section>
+      {/* </div> */}
+    {/* </section> */}
   );
 }
