@@ -4,13 +4,16 @@ export default function Page() {
   return (
     <section>
       <div className="bg-gray-100 min-h-screen p-6">
-        <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+        <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 transition-transform duration-300 hover:scale-105">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-4xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">
               Syed Ali Haider
             </h1>
             <div className="text-gray-500 text-lg mt-2">
-              <a href="mailto:sh6070@nyu.edu" className="hover:underline">
+              <a
+                href="mailto:sh6070@nyu.edu"
+                className="hover:underline hover:text-blue-600 transition-colors duration-300"
+              >
                 sh6070@nyu.edu
               </a>{" "}
               |
@@ -18,7 +21,7 @@ export default function Page() {
                 href="https://linkedin.com/in/haider-tech"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:underline"
+                className="hover:underline hover:text-blue-600 transition-colors duration-300"
               >
                 {" "}
                 LinkedIn
@@ -28,7 +31,7 @@ export default function Page() {
                 href="https://github.com/s-haider10"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:underline"
+                className="hover:underline hover:text-blue-600 transition-colors duration-300"
               >
                 {" "}
                 GitHub
@@ -38,7 +41,7 @@ export default function Page() {
                 href="https://s-haider10.github.io/#"
                 target="_blank"
                 rel="noreferrer"
-                className="hover:underline"
+                className="hover:underline hover:text-blue-600 transition-colors duration-300"
               >
                 {" "}
                 Portfolio
@@ -48,17 +51,17 @@ export default function Page() {
 
           {/* Education Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 hover:text-blue-600 transition-colors duration-300">
               Education
             </h2>
-            <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
               <h3 className="text-xl font-bold text-gray-800">
                 New York University
               </h3>
               <p className="text-gray-600">
                 B.Sc. in Computer Science (Artificial Intelligence)
               </p>
-              <p className="text-gray-500">GPA: 3.6/4.0 | Aug '21 -- May '25</p>
+              <p className="text-gray-500">Aug '21 -- May '25</p>
               <p className="text-gray-500 mt-2">
                 Relevant Coursework: Data Structures, Algorithms, Machine
                 Learning, Computer Vision, Big Data Science, Quantum Computing,
@@ -69,11 +72,11 @@ export default function Page() {
 
           {/* Experience Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 hover:text-blue-600 transition-colors duration-300">
               Experience
             </h2>
             <div className="space-y-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold text-gray-800">
                   Khudi Ventures
                 </h3>
@@ -92,7 +95,7 @@ export default function Page() {
                 </ul>
               </div>
 
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold text-gray-800">
                   Reckitt Benckiser (MENA IT&D)
                 </h3>
@@ -106,18 +109,16 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
-              {/* Add more experience items here */}
             </div>
           </section>
 
           {/* Research Projects Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 hover:text-blue-600 transition-colors duration-300">
               Research Projects
             </h2>
             <div className="space-y-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold text-gray-800">Kiwi+</h3>
                 <p className="text-gray-600">
                   Multimodal Adaptive Personalization Systems Lab | Oct '24 --
@@ -134,18 +135,16 @@ export default function Page() {
                   </li>
                 </ul>
               </div>
-
-              {/* Add more research projects here */}
             </div>
           </section>
 
           {/* Awards & Leadership */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 hover:text-blue-600 transition-colors duration-300">
               Awards & Leadership
             </h2>
             <div className="space-y-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
+              <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
                 <h3 className="text-xl font-bold text-gray-800">
                   Dean's Undergraduate Research Fund
                 </h3>
@@ -160,10 +159,10 @@ export default function Page() {
 
           {/* Skills Section */}
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold text-gray-700 mb-4 hover:text-blue-600 transition-colors duration-300">
               Skills
             </h2>
-            <div className="bg-gray-50 p-4 rounded-lg">
+            <div className="bg-gray-50 p-4 rounded-lg shadow-sm">
               <p className="text-gray-600">
                 <strong>Programming Languages:</strong> Python, Java, C, C++,
                 SQL, JavaScript, HTML/CSS
