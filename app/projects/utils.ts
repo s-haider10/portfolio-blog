@@ -58,7 +58,7 @@ function getMDXData(dir: string) {
 }
 
 // Function to get project posts data
-export function getProjectPosts() {
+export function getProjectData() {
   return getMDXData(path.join(process.cwd(), "app", "projects", "posts"));
 }
 
