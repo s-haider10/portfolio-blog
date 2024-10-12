@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { getProjectData } from "app/projects/utils";
-import { formatDate } from "app/blog/utils"; // Reuse the formatDate function
+import { formatDate } from "app/projects/utils"; // Reuse the formatDate function
 
 export const ProjectList = () => {
   const allProjects = getProjectData();
