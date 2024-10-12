@@ -1,7 +1,7 @@
 import { getBlogPosts } from "app/blog/utils";
 import { getProjectPosts } from "app/projects/utils"; // Import the function to get project data
 
-export const baseUrl = "https://portfolio-blog-starter.vercel.app";
+export const baseUrl = "https://syedhaider.vercel.app";
 
 export default async function sitemap() {
   // Get blog posts for the sitemap

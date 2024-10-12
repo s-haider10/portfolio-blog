@@ -1,4 +1,5 @@
 import { BlogPosts } from "app/components/posts";
+import { ProjectPosts } from "app/components/projectList";
 
 export default function Page() {
   return (
@@ -43,6 +44,9 @@ export default function Page() {
 
       <div className="my-8">
         <BlogPosts />
+      </div>
+      <div className="my-8">
+        <ProjectPosts />
       </div>
     </section>
   );
