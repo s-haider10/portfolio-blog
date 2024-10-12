@@ -3,19 +3,23 @@ import { BlogPosts } from "app/components/posts";
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Syed Ali Haider
-      </h1>
       <img
         className="rounded-full w-48 h-48 object-cover"
         src="/profile.jpg"
         alt="Profile Picture"
       />
+
+      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
+        Syed Ali Haider
+      </h1>
+
       <div>
-        <p className="mb-4">Welcome to My Intellectual Journey</p>
+        <p className="mb-6">
+          <strong> Welcome to My Intellectual Journey</strong>
+        </p>
         <p className="mb-4">
-          Hi, I’m Syed Ali Haider, a curious mind studying
-          <strong> Computer Science</strong>. My journey is fueled by an
+          Hi, I’m Ali, a curious mind studying
+          <strong> Computer Science at NYU</strong>. My journey is fueled by an
           insatiable thirst for knowledge, exploring profound questions that
           challenge our understanding of reality.
         </p>
