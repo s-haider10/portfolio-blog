@@ -1,12 +1,19 @@
 import fs from "fs";
 import path from "path";
 
-type Metadata = {
+// Add new type for Experience metadata
+type ExperienceMetadata = {
   title: string;
-  publishedAt: string;
-  summary: string;
-  image?: string;
+  startDate: string;
+  endDate: string;
+  company: string;
+  location: string;
 };
+
+// Add new function to get experience posts
+export function getExperiencePosts() {
+  return getMDXData(path.join(process.cwd(), "app", "experience", "posts"));
+}
 
 function parseFrontmatter(fileContent: string) {
   let frontmatterRegex = /---\s*([\s\S]*?)\s*---/;
@@ -14,7 +21,7 @@ function parseFrontmatter(fileContent: string) {
   let frontMatterBlock = match![1];
   let content = fileContent.replace(frontmatterRegex, "").trim();
   let frontMatterLines = frontMatterBlock.trim().split("\n");
-  let metadata: Partial<Metadata> = {};
+  let metadata: Partial<Metadata | ExperienceMetadata> = {};
 
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
@@ -49,8 +56,8 @@ function getMDXData(dir) {
   });
 }
 
-export function getExperiencePosts() {
-  return getMDXData(path.join(process.cwd(), "app", "experience", "posts"));
+export function getBlogPosts() {
+  return getMDXData(path.join(process.cwd(), "app", "blog", "posts"));
 }
 
 export function formatDate(date: string, includeRelative = false) {
@@ -87,4 +94,21 @@ export function formatDate(date: string, includeRelative = false) {
   }
 
   return `${fullDate} (${formattedDate})`;
+}
+
+// Add a function to format date range
+export function formatDateRange(startDate: string, endDate: string) {
+  const start = new Date(startDate);
+  const end = endDate === "present" ? new Date() : new Date(endDate);
+
+  const startStr = start.toLocaleString("default", {
+    month: "short",
+    year: "numeric",
+  });
+  const endStr =
+    endDate === "present"
+      ? "Present"
+      : end.toLocaleString("default", { month: "short", year: "numeric" });
+
+  return `${startStr} - ${endStr}`;
 }
