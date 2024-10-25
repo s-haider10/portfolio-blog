@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 // Add new type for Experience metadata
-type ExperienceMetadata = {
+type Metadata = {
   title: string;
   startDate: string;
   endDate: string;
@@ -21,7 +21,7 @@ function parseFrontmatter(fileContent: string) {
   let frontMatterBlock = match![1];
   let content = fileContent.replace(frontmatterRegex, "").trim();
   let frontMatterLines = frontMatterBlock.trim().split("\n");
-  let metadata: Partial<Metadata | ExperienceMetadata> = {};
+  let metadata: Partial<Metadata | Metadata> = {};
 
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
