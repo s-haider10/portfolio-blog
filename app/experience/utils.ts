@@ -1,4 +1,4 @@
-export function getExperienceEntries() {
+export function getExperiencePosts() {
   return [
     {
       title: "Software Engineer",
