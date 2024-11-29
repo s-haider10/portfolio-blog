@@ -10,11 +10,11 @@ export default function ExperiencePage() {
 
       {/* New Subsections with Styled Boxes */}
       <div className="experience-subsections">
+        <h2 className="font-semibold text-xl">Honors & Awards</h2>
         <div className="experience-box">
-          <h2 className="font-semibold text-xl">Honors & Awards</h2>
           <div className="awards">
             <p>
-              <strong>Most Popular Project Award</strong> $|${" "}
+              <strong>Most Popular Project Award</strong>{" "}
               <em>NYU Shanghai Undergraduate Research Symposium</em>{" "}
               <span className="float-right">Fall '24</span>
             </p>
