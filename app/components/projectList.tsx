@@ -35,11 +35,12 @@ export function ProjectPosts() {
                 <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
                   {project.metadata.title}
                 </p>
-                {project.metadata.keywords && (
+                {Array.isArray(project.metadata.keywords) &&
+                project.metadata.keywords.length > 0 ? (
                   <p className="text-sm text-neutral-500 dark:text-neutral-400">
                     Keywords: {project.metadata.keywords.join(", ")}
                   </p>
-                )}
+                ) : null}
               </div>
             </div>
           </Link>
