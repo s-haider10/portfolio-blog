@@ -7,20 +7,25 @@ export default function ExperiencePage() {
         Experiences
       </h1>
       <ExperienceList />
-
+      <h3 className="font-semibold text-xl">Internships</h3>
       <div className="experience-subsections">
         <div className="experience-box">
-          <h2 className="font-semibold text-xl">Honors</h2>
-          <p>Dean's List, 2023</p>
+          <h3 className="font-semibold text-xl">Honors</h3>
+          <p>Research Assistant Fund</p>
+          <p>Dean Undergraduate Research Fund 2024</p>
+          <p>Dean's List for Academic Year, 2022-23</p>
+          <p>Dean's List for Academic Year, 2021-22</p>
         </div>
 
         <div className="experience-box">
-          <h2 className="font-semibold text-xl">Teaching</h2>
-          <p>Teaching Assistant for Intro to Computer Science</p>
+          <h3 className="font-semibold text-xl">Teaching</h3>
+          <p>Teaching Assistant for Data Structures</p>
+          <p>Teaching Assistant for Intro to Computer and Data Science</p>
+          <p>Teaching Assistant for Intro to Computer Programming</p>
         </div>
 
         <div className="experience-box">
-          <h2 className="font-semibold text-xl">Leadership</h2>
+          <h3 className="font-semibold text-xl">Leadership</h3>
           <p>President of the Coding Club</p>
         </div>
       </div>
