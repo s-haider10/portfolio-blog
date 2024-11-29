@@ -162,8 +162,8 @@ table {
   background-color: var(--experience-item-bg); /* Use the dynamic background */
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(21, 28, 34, 0.5);
-  margin: 1.25px 0;
-  padding: 1.25px;
+  margin: 1.5px 0;
+  padding: 1.5px;
 }
 
 .experience-item h3 {
@@ -228,8 +228,8 @@ table {
   background-color: var(--experience-item-bg); /* Use the dynamic background */
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(69, 100, 127, 0.605); /* Subtle shadow */
-  margin: 1.5px 0;
-  padding: 1.5px;
+  margin: 15px 0;
+  padding: 15px;
 }
 
 .experience-box h2 {
