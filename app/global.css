@@ -219,3 +219,23 @@ table {
   color: var(--sh-keyword); /* Use a defined color for keywords */
   margin-top: 0.25em; /* Space above keywords */
 }
+
+.experience-subsections {
+  margin-top: 2em; /* Space above the subsections */
+}
+
+.experience-box {
+  background-color: var(--sh-background); /* Use a defined background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(21, 28, 34, 0.1); /* Subtle shadow */
+  padding: 1.5em; /* Padding inside the box */
+  margin-bottom: 1.5em; /* Space below each box */
+}
+
+.experience-box h2 {
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+.experience-box p {
+  margin: 0; /* Remove default margin */
+}
