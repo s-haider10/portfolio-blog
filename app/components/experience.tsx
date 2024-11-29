@@ -7,19 +7,20 @@ export default function ExperienceList() {
     <div className="experience-list">
       {experiences.map((exp) => (
         <div key={exp.slug} className="experience-item">
-          <h2>{exp.metadata.title}</h2>
-          <h3>
+          <h3 className="company-location">
             {exp.metadata.company} - {exp.metadata.location}
           </h3>
-          <p>{formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}</p>
-          <p>{exp.metadata.description}</p> {/* Displaying the description */}
-          <p>
+          <p className="date">
+            {formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}
+          </p>
+          <h2>{exp.metadata.title}</h2>
+          <p className="description">{exp.metadata.description}</p>
+          <p className="skills">
             Skills:{" "}
             {Array.isArray(exp.metadata.skills)
               ? exp.metadata.skills.join(", ")
               : "No skills listed."}
-          </p>{" "}
-          {/* Displaying skills */}
+          </p>
         </div>
       ))}
     </div>
