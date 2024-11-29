@@ -10,10 +10,10 @@ export default function ExperienceList() {
           <h3 className="company-location">
             {exp.metadata.company} - {exp.metadata.location}
           </h3>
-          <p className="date">
+          <h2 className="date">
+            {exp.metadata.title}{" "}
             {formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}
-          </p>
-          <h2>{exp.metadata.title}</h2>
+          </h2>
           <p className="description">{exp.metadata.description}</p>
           <p className="skills">
             Skills:{" "}

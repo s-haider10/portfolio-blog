@@ -11,7 +11,7 @@
   --sh-sign: #8996a3;
   --sh-string: #264645;
   --sh-keyword: #392450;
-  --sh-comment: #a19595;
+  --sh-comment: #3a659f;
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
@@ -22,7 +22,7 @@
   :root {
     --sh-class: #3a659f;
     --sh-identifier: white;
-    --sh-keyword: #573273;
+    --sh-keyword: #476886;
     --sh-string: #536695;
     --experience-item-bg: #1a1a1a; /* Dark mode background */
   }
@@ -182,7 +182,7 @@ table {
 .experience-item .date {
   font-weight: normal; /* Low importance for date */
   color: var(--sh-comment); /* Use a defined color for date */
-  font-size: 0.9rem; /* Slightly smaller font size */
+  font-size: 0.5rem; /* Slightly smaller font size */
   margin-bottom: 0.5em; /* Space below date */
 }
 
