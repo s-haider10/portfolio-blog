@@ -6,27 +6,19 @@
 }
 
 :root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
+  --sh-class: #4c97f8;
+  --sh-identifier: white;
   --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
+  --sh-string: #0fa295;
+  --sh-keyword: #f47067;
   --sh-comment: #a19595;
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
+html {
+  color-scheme: dark;
 }
 
 html {
@@ -61,7 +53,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-900 py-2 px-3 text-sm;
 }
 
 .prose code {
@@ -84,23 +76,23 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-neutral-200;
 }
 
 .prose h1 {
-  @apply text-4xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-4xl font-medium tracking-tight mt-6 mb-2 text-white;
 }
 
 .prose h2 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-medium tracking-tight mt-6 mb-2 text-white;
 }
 
 .prose h3 {
-  @apply text-xl font-medium tracking-tight mt-6 mb-2;
+  @apply text-xl font-medium tracking-tight mt-6 mb-2 text-white;
 }
 
 .prose h4 {
-  @apply text-lg font-medium tracking-tight mt-6 mb-2;
+  @apply text-lg font-medium tracking-tight mt-6 mb-2 text-white;
 }
 
 .prose strong {
@@ -157,7 +149,7 @@ table {
 }
 
 .experience-item {
-  background: #1a1a1a; /* Dark background for experience items */
+  background: #21374fe3; /* Dark background for experience items */
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   margin: 15px 0;
@@ -165,14 +157,14 @@ table {
 }
 
 .experience-item h2 {
-  color: #fff; /* White text for experience item titles */
+  color: #ffffff; /* White text for experience item titles */
 }
 
 .experience-item h3 {
-  color: #ccc; /* Light gray for experience item subtitles */
+  color: #a0b5c7; /* Light gray for experience item subtitles */
   font-weight: normal;
 }
 
 .experience-item p {
-  color: #aaa; /* Lighter gray for experience item paragraphs */
+  color: #57799be5; /* Lighter gray for experience item paragraphs */
 }

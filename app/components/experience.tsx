@@ -5,7 +5,7 @@ export default function ExperienceList() {
 
   return (
     <div>
-      <h1>Professional Experience</h1>
+      <h1 className="text-2xl">Experiences</h1>
       {experiences.map((exp) => (
         <div key={exp.slug} className="experience-item">
           <h2>{exp.metadata.title}</h2>
