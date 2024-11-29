@@ -148,19 +148,3 @@ table {
 .title {
   text-wrap: balance;
 }
-
-.experience-item {
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-}
-
-.experience-item h2 {
-  margin-bottom: 0.5rem;
-}
-
-.experience-item h3 {
-  color: #666;
-  margin-bottom: 0.5rem;
-}
