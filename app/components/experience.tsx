@@ -1,11 +1,15 @@
-import { getExperiencePosts, formatDateRange } from "app/experience/utils";
+import {
+  getExperiencePosts,
+  formatDateRange,
+  simpleMarkdownToHTML,
+} from "app/experience/utils";
 
 export default function ExperienceList() {
   const experiences = getExperiencePosts();
 
   return (
-    <div>
-      <h1 className="text-2xl">Experiences</h1>
+    <div className="experience-list">
+      <h1>Professional Experience</h1>
       {experiences.map((exp) => (
         <div key={exp.slug} className="experience-item">
           <h2>{exp.metadata.title}</h2>
@@ -13,7 +17,14 @@ export default function ExperienceList() {
             {exp.metadata.company} - {exp.metadata.location}
           </h3>
           <p>{formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}</p>
-          <div dangerouslySetInnerHTML={{ __html: exp.content }} />
+          <p>{exp.metadata.description}</p> {/* Displaying the description */}
+          <p>
+            Skills:{" "}
+            {exp.metadata.skills
+              ? exp.metadata.skills.join(", ")
+              : "No skills listed."}
+          </p>{" "}
+          {/* Displaying skills */}
         </div>
       ))}
     </div>

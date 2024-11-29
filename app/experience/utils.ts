@@ -8,6 +8,8 @@ type Metadata = {
   endDate: string;
   company: string;
   location: string;
+  description: string;
+  skills?: string[];
 };
 
 // Add new function to get experience posts
@@ -21,7 +23,7 @@ function parseFrontmatter(fileContent: string) {
   let frontMatterBlock = match![1];
   let content = fileContent.replace(frontmatterRegex, "").trim();
   let frontMatterLines = frontMatterBlock.trim().split("\n");
-  let metadata: Partial<Metadata | Metadata> = {};
+  let metadata: Partial<Metadata> = {};
 
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
@@ -29,6 +31,11 @@ function parseFrontmatter(fileContent: string) {
     value = value.replace(/^['"](.*)['"]$/, "$1"); // Remove quotes
     metadata[key.trim() as keyof Metadata] = value;
   });
+
+  // Convert skills from a string to an array if needed
+  if (metadata.skills) {
+    metadata.skills = metadata.skills.split(",").map((skill) => skill.trim());
+  }
 
   return { metadata: metadata as Metadata, content };
 }
