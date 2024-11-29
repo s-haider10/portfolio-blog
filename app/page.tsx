@@ -20,16 +20,14 @@ export default function Page() {
           <strong> Welcome to My Intellectual Journey</strong>
         </p>
         <p className="mb-4">
-          Hi, I’m Ali
+          Hi, I’m Ali an undergraduate student studying{" "}
           <strong> Computer Science at NYU</strong>.
         </p>
         <p className="mb-4">
-          <strong>What is Intelligence?</strong>hmmm
+          <strong>Point 1</strong>
         </p>
         <p className="mb-4">
-          <strong>What is ...?</strong> My work in{" "}
-          <strong>quantum computing</strong> and{" "}
-          <strong>machine learning</strong>
+          <strong>Point 2</strong>
         </p>
         <p className="mb-5">
           <strong>Projects</strong>
