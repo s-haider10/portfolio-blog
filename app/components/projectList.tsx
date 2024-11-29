@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { formatDate, getProjectPosts } from "app/projects/utils";
 
+interface Metadata {
+  publishedAt: string;
+  title: string;
+  keywords?: string[];
+}
+
 export function ProjectPosts() {
-  let allProjects = getProjectPosts();
+  let allProjects = getProjectPosts() as { metadata: Metadata; slug: string }[];
 
   return (
     <div>
@@ -25,9 +31,16 @@ export function ProjectPosts() {
               <p className="text-neutral-600 dark:text-neutral-400 w-[100px] tabular-nums">
                 {formatDate(project.metadata.publishedAt, false)}
               </p>
-              <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
-                {project.metadata.title}
-              </p>
+              <div className="flex flex-col">
+                <p className="text-neutral-900 dark:text-neutral-100 tracking-tight">
+                  {project.metadata.title}
+                </p>
+                {project.metadata.keywords && (
+                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                    Keywords: {project.metadata.keywords.join(", ")}
+                  </p>
+                )}
+              </div>
             </div>
           </Link>
         ))}

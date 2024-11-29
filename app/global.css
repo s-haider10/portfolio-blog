@@ -20,10 +20,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --sh-class: #3a659f;
+    --sh-class: #5e8dca;
     --sh-identifier: white;
-    --sh-keyword: #476886;
-    --sh-string: #536695;
+    --sh-keyword: #9d8bce;
+    --sh-string: #d69f98;
     --experience-item-bg: #1a1a1a; /* Dark mode background */
   }
   html {
@@ -182,7 +182,7 @@ table {
 .experience-item .date {
   font-weight: normal; /* Low importance for date */
   color: var(--sh-comment); /* Use a defined color for date */
-  font-size: 0.5rem; /* Slightly smaller font size */
+  font-size: 0.9rem; /* Slightly smaller font size */
   margin-bottom: 0.5em; /* Space below date */
 }
 
@@ -201,4 +201,20 @@ table {
 .experience-item .skills {
   font-size: 0.85rem; /* Smaller font for skills */
   color: var(--sh-keyword); /* Use a defined color for skills */
+}
+
+.experience-subsections h2 {
+  font-weight: bold; /* High importance for subsection titles */
+  margin-top: 1.5em; /* Space above subsection titles */
+  margin-bottom: 0.5em; /* Space below subsection titles */
+}
+
+.experience-subsections p {
+  margin-bottom: 1em; /* Space below each paragraph */
+}
+
+.project-keywords {
+  font-size: 0.85rem; /* Smaller font size for keywords */
+  color: var(--sh-keyword); /* Use a defined color for keywords */
+  margin-top: 0.25em; /* Space above keywords */
 }
