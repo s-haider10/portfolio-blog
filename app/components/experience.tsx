@@ -1,5 +1,5 @@
 import { getExperiencePosts, formatDateRange } from "app/experience/utils";
-import { FileText } from "lucide-react";
+import { FaFileAlt } from "react-icons/fa";
 
 export default function ExperienceList() {
   const experiences = getExperiencePosts();
@@ -12,15 +12,14 @@ export default function ExperienceList() {
           href="/cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 px-4 py-2 rounded-lg
+          className="px-4 py-2 rounded-lg
             bg-gradient-to-r from-white to-slate-50
             hover:from-blue-50 hover:to-white
             transition-all duration-300
             border border-slate-200/60 shadow-sm hover:shadow-md
             text-gray-700 hover:text-gray-900"
         >
-          <FileText size={20} />
-          <span>Download CV</span>
+          Download CV
         </a>
       </div>
       {experiences.map((exp) => (
