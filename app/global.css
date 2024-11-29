@@ -167,5 +167,34 @@ table {
 }
 
 .experience-item h3 {
-  font-weight: normal;
+  font-weight: bold; /* High importance for title */
+  font-size: 1.5rem; /* Larger font size for emphasis */
+  color: var(--sh-class); /* Use a defined color for the title */
+  margin-bottom: 0.5em; /* Space below the title */
+}
+
+.experience-item .company-location {
+  font-weight: bold; /* High importance for company and location */
+  color: var(--sh-identifier); /* Use a defined color for company */
+  margin-bottom: 0.25em; /* Space below company-location */
+}
+
+.experience-item .date {
+  font-weight: normal; /* Low importance for date */
+  color: var(--sh-comment); /* Use a defined color for date */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin-bottom: 0.5em; /* Space below date */
+}
+
+.experience-item .description {
+  font-weight: normal; /* High importance for description */
+  color: var(--sh-string); /* Use a defined color for description */
+  margin-bottom: 0.5em; /* Space below description */
+}
+
+.experience-item .skills {
+  font-weight: normal; /* Low importance for skills */
+  color: var(--sh-keyword); /* Use a defined color for skills */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  margin-top: 0.5em; /* Space above skills */
 }
