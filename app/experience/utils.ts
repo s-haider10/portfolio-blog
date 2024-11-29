@@ -9,7 +9,7 @@ type Metadata = {
   company: string;
   location: string;
   description: string;
-  skills?: string[];
+  skills?: string | string[];
 };
 
 // Add new function to get experience posts
@@ -33,7 +33,7 @@ function parseFrontmatter(fileContent: string) {
   });
 
   // Convert skills from a string to an array if needed
-  if (metadata.skills) {
+  if (typeof metadata.skills === "string") {
     metadata.skills = metadata.skills.split(",").map((skill) => skill.trim());
   }
 

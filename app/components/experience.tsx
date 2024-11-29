@@ -1,8 +1,4 @@
-import {
-  getExperiencePosts,
-  formatDateRange,
-  simpleMarkdownToHTML,
-} from "app/experience/utils";
+import { getExperiencePosts, formatDateRange } from "app/experience/utils";
 
 export default function ExperienceList() {
   const experiences = getExperiencePosts();
@@ -20,7 +16,7 @@ export default function ExperienceList() {
           <p>{exp.metadata.description}</p> {/* Displaying the description */}
           <p>
             Skills:{" "}
-            {exp.metadata.skills
+            {Array.isArray(exp.metadata.skills)
               ? exp.metadata.skills.join(", ")
               : "No skills listed."}
           </p>{" "}
