@@ -1,27 +1,11 @@
 import { getExperiencePosts, formatDateRange } from "app/experience/utils";
-import { FaFileAlt } from "react-icons/fa";
 
 export default function ExperienceList() {
   const experiences = getExperiencePosts();
 
   return (
     <div className="max-w-3xl mx-auto py-8">
-      <div className="flex items-center justify-between mb-8">
-        <h1 className="text-3xl font-bold">Professional Experience</h1>
-        <a
-          href="/cv.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="px-4 py-2 rounded-lg
-            bg-gradient-to-r from-white to-slate-50
-            hover:from-blue-50 hover:to-white
-            transition-all duration-300
-            border border-slate-200/60 shadow-sm hover:shadow-md
-            text-gray-700 hover:text-gray-900"
-        >
-          Download CV
-        </a>
-      </div>
+      <h1 className="text-3xl font-bold mb-8">Professional Experience</h1>
       {experiences.map((exp) => (
         <div
           key={exp.slug}
