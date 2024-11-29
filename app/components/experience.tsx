@@ -5,7 +5,9 @@ export default function ExperienceList() {
 
   return (
     <div className="experience-list">
-      <h1>Professional Experience</h1>
+      <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
+        Experiences
+      </h1>
       {experiences.map((exp) => (
         <div key={exp.slug} className="experience-item">
           <h2>{exp.metadata.title}</h2>
