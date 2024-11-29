@@ -19,7 +19,7 @@ export default function ExperiencePage() {
               <span className="float-right">Fall '24</span>
             </p>
             <p>
-              <strong>Dean's Undergrad Research Fund</strong> <em>NYU</em>{" "}
+              <strong>NYU Dean's Undergrad Research Fund</strong>{" "}
               <span className="float-right">Summer '24</span>
             </p>
             <p>
@@ -70,7 +70,7 @@ export default function ExperiencePage() {
             </p>
             <p>
               <strong>Intro to CS & DS</strong>{" "}
-              <span className="float-right">Spring '24</span>
+              <span className="float-right">Spring '23</span>
             </p>
             <p>
               <strong>Intro to Computer Programming</strong>{" "}
