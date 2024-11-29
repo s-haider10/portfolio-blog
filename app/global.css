@@ -22,8 +22,8 @@
   :root {
     --sh-class: #5e8dca;
     --sh-identifier: white;
-    --sh-keyword: #9d8bce;
-    --sh-string: #d69f98;
+    --sh-keyword: #83a1c9;
+    --sh-string: #a4bddd;
     --experience-item-bg: #1a1a1a; /* Dark mode background */
   }
   html {
@@ -187,6 +187,7 @@ table {
 }
 
 .experience-item h2 {
+  font-weight: bold;
   font-style: italic; /* Italic for job title */
   color: var(--sh-class); /* Use a defined color for the title */
   margin-bottom: 0.5em; /* Space below the title */
