@@ -10,7 +10,6 @@ export default function Page() {
         alt="Profile Picture"
       />
 
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter"> </h1>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         Syed Ali Haider
       </h1>
@@ -50,6 +49,7 @@ export default function Page() {
           . Their guidance has shaped my research interests and approach to
           solving challenging problems.
         </p>
+
         <p className="mb-4">
           My journey so far has been about exploring how systems can learn and
           adapt, just like we do. I’ve worked on exciting projects in areas like{" "}
@@ -68,6 +68,7 @@ export default function Page() {
           >
             <strong>Prof. Tim Byrnes</strong>
           </a>
+        </p>
 
         <div className="my-8">
           <ProjectPosts />
