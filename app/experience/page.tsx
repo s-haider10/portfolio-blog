@@ -11,20 +11,16 @@ export default function ExperiencePage() {
 
       {/* New Subsections with Styled Boxes */}
       <div className="experience-subsections">
-        <h2 className="font-semibold text-xl text-blue-600">Education</h2>
+        <h2 className="font-semibold text-xl">Education</h2>
         <div className="experience-box">
           <div className="education">
             <h3 className="custom-blue">New York University</h3>
-            <p className="text-sm text-gray-700">
-              Location: Shanghai & New York
+            <p className="text-md">
+              Shanghai & New York{" "}
+              <span className="float-right">Fall '21 - Present</span>{" "}
             </p>
-            <p className="text-sm text-gray-700">
-              Dates:{" "}
-              <span className="float-right text-gray-600">
-                Fall '21 - Present
-              </span>
-            </p>
-            <p className="font-semibold text-md text-gray-800">
+
+            <p className="text-sm text-gray-300">
               Courses: Calculus I & II, Discrete Mathematics, Probability and
               Statistics for Econ, Linear Algebra, Data Structures, Basic
               Algorithms, Computer Systems Organization, Operating Systems,
@@ -42,23 +38,25 @@ export default function ExperiencePage() {
           <div className="awards">
             <p>
               Most Popular Project Award @ NYU Research Symposium
-              <span className="float-right">Fall '24</span>
+              <span className="float-right custom-blue">Fall '24</span>
             </p>
             <p>
               NYU Dean's Undergrad Research Fund
-              <em> </em> <span className="float-right">Summer '24</span>
+              <em> </em>{" "}
+              <span className="float-right custom-blue">Summer '24</span>
             </p>
             <p>
               NYU Dean’s Honor List
-              <em></em> <span className="float-right">'21 - '23</span>
+              <em></em>{" "}
+              <span className="float-right custom-blue">'21 - '23</span>
             </p>
             <p>
               NYU Research Assistant Grant<em></em>{" "}
-              <span className="float-right">Spring '23</span>
+              <span className="float-right custom-blue">Spring '23</span>
             </p>
             <p>
               Scholar’s Award (full ride) @ Yale YGS
-              <span className="float-right">Summer '19</span>
+              <span className="float-right custom-blue">Summer '19</span>
             </p>
           </div>
         </div>
@@ -67,19 +65,19 @@ export default function ExperiencePage() {
           <div className="leadership">
             <p>
               Senior Dev Team @ NYU Blockchain&Fintech Club
-              <span className="float-right">Spring '24</span>
+              <span className="float-right custom-blue ">Spring '24</span>
             </p>
             <p>
               Tech Lead & Mentor @ Tech@NYU
-              <span className="float-right">Fall '23</span>
+              <span className="float-right custom-blue">Fall '23</span>
             </p>
             <p>
               Co-Director Tech Consultancy @ NYUSH TAMID Group
-              <span className="float-right">Spring '23</span>
+              <span className="float-right custom-blue">Spring '23</span>
             </p>
             <p>
               Secretary General @ NYUSHMUN-VI
-              <span className="float-right">Spring '23</span>
+              <span className="float-right custom-blue">Spring '23</span>
             </p>
           </div>
         </div>
@@ -88,19 +86,23 @@ export default function ExperiencePage() {
           <div className="tutoring">
             <p>
               Lead Course Assistant for CS
-              <span className="float-right">Fall '24 - Present</span>
+              <span className="float-right custom-blue">
+                Fall '24 - Present
+              </span>
             </p>
             <p>
               Data Structures
-              <span className="float-right">Fall '24 - Present</span>
+              <span className="float-right custom-blue">
+                Fall '24 - Present
+              </span>
             </p>
             <p>
               Intro to Computer and Data Science
-              <span className="float-right">Spring '23</span>
+              <span className="float-right custom-blue">Spring '23</span>
             </p>
             <p>
               Intro to Computer Programming
-              <span className="float-right">Fall '22</span>
+              <span className="float-right custom-blue">Fall '22</span>
             </p>
           </div>
         </div>
