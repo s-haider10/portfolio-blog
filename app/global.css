@@ -298,11 +298,3 @@ table {
   padding: 2em; /* Padding inside the box */
   margin-bottom: 2em; /* Space below each box */
 }
-
-.education-box p {
-  margin: 0.5em 0; /* Space between each item */
-  display: flex; /* Use flexbox for alignment */
-  justify-content: space-between; /* Space between text and date */
-  align-items: center; /* Center align items vertically */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-}

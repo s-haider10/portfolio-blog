@@ -20,16 +20,18 @@ export default function ExperiencePage() {
               <span className="float-right ">Fall '21 - Present</span>{" "}
             </p>
             <p className="text-xs text-gray-450">
-              Math: Calculus, Discrete Math, Probs and Stats, Linear Algebra,
-              Quantum Computing
+              <span className="font-bold italic">Math:</span> Calculus, Discrete
+              Math, Probs and Stats, Linear Algebra, Quantum Computing
             </p>
             <p className="text-xs text-gray-450">
-              CS Core Data Structures, Algorithms, Computer Systems
-              Organization, Operating Systems, Databases, Info Visualisation,
+              <span className="font-bold italic">CS Core:</span> Data
+              Structures, Algorithms, Computer Systems Organization, Operating
+              Systems, Databases, Info Visualisations
             </p>
             <p className="text-xs text-gray-450">
-              AI/ML: Fundamentals of Machine Learning, Computer Vision, Big Data
-              Science, Recommender Systems, ML with Graphs, NLP
+              <span className="font-bold italic">AI/ML:</span> Fundamentals of
+              Machine Learning, Computer Vision, Big Data Science, Recommender
+              Systems, ML with Graphs, NLP
             </p>
           </div>
         </div>
@@ -83,7 +85,7 @@ export default function ExperiencePage() {
           </div>
         </div>
         <h2 className="font-semibold text-xl">Tutoring at NYU</h2>
-        <p className="text-2xs italic"> LA = Learning/Teaching Assistant *</p>
+        <p className="text-xs italic"> LA = Learning/Teaching Assistant *</p>
         <div className="experience-box">
           <div className="tutoring">
             <p>
