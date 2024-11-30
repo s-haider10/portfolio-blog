@@ -15,6 +15,7 @@ export default function ExperiencePage() {
         <div className="education-box">
           <div className="education">
             <h3 className="text-lg custom-blue">New York University</h3>
+            <p className="text-sm italic"> BSc. Computer Science (AI Focus) </p>
             <p className="text-sm italic">
               Shanghai & New York{" "}
               <span className="float-right ">Fall '21 - Present</span>{" "}

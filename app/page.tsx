@@ -17,8 +17,8 @@ export default function Page() {
 
       <div>
         <p className="mb-4">
-          Hi, a Computer Science student at <strong>NYU</strong> with a passion
-          for understanding and building intelligent systems.
+          Hi, I'm a senior at <strong>NYU</strong> studying and building
+          intelligent systems.
         </p>
 
         <p className="mb-4">
@@ -57,8 +57,8 @@ export default function Page() {
           always aiming to make technology more intuitive and accessible.
         </p>
 
-        <p className="mb-4">
-          Recently, I’ve been inspired by the intersection of{" "}
+        <p className="text-sm mb-4">
+          Recently, I’ve been exploring the intersection of{" "}
           <strong>quantum technologies</strong> and computation, exploring their
           potential under the mentorship of{" "}
           <a
@@ -68,9 +68,7 @@ export default function Page() {
           >
             <strong>Prof. Tim Byrnes</strong>
           </a>
-          . This experience has given me a profound appreciation for modern
-          physics and its role in shaping the future of computing.
-        </p>
+        🌌🚀
 
         <div className="my-8">
           <ProjectPosts />
