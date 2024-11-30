@@ -68,7 +68,6 @@ export default function Page() {
           >
             <strong>Prof. Tim Byrnes</strong>
           </a>
-        🌌🚀
 
         <div className="my-8">
           <ProjectPosts />
