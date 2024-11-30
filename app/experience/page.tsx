@@ -15,7 +15,7 @@ export default function ExperiencePage() {
         <div className="experience-box">
           <div className="awards">
             <p>
-              Most Popular Project Award <em>NYU Research Symposium</em>{" "}
+              Most Popular Project Award @ NYU Research Symposium
               <span className="float-right">Fall '24</span>
             </p>
             <p>
@@ -24,14 +24,14 @@ export default function ExperiencePage() {
             </p>
             <p>
               NYU Dean’s Honor List
-              <em></em> <span className="float-right">'21 -- '23</span>
+              <em></em> <span className="float-right">'21 - '23</span>
             </p>
             <p>
               NYU Research Assistant Grant<em></em>{" "}
               <span className="float-right">Spring '23</span>
             </p>
             <p>
-              <strong>Scholar’s Award(full ride) </strong> <em>Yale YGS</em>{" "}
+              Scholar’s Award(full ride) @ Yale YGS
               <span className="float-right">Summer '19</span>
             </p>
           </div>
@@ -40,19 +40,21 @@ export default function ExperiencePage() {
         <div className="experience-box">
           <div className="leadership">
             <p>
-              <strong>Senior Dev Team</strong> <em>Blockchain&Fintech@NYU</em>{" "}
+              Senior Dev Team @ NYU Blockchain&Fintech Club
               <span className="float-right">Spring '24</span>
             </p>
             <p>
-              <strong>Tech Lead & Mentor</strong> <em>Tech@NYU </em>{" "}
+              Tech Lead & Mentor @ Tech@NYU
               <span className="float-right">Fall '23</span>
             </p>
             <p>
-              <strong>Co-Director Tech Consultancy</strong> <em>TAMID@NYU</em>{" "}
+              <span className="text-blue-500">
+                Co-Director Tech Consultancy @ NYUSH TAMID Group
+              </span>
               <span className="float-right">Spring'23</span>
             </p>
             <p>
-              <strong>Secretary General</strong> <em>NYUSH MUN VI</em>{" "}
+              Secretary General NYUSH MUN VI
               <span className="float-right">Spring '23</span>
             </p>
           </div>

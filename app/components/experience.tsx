@@ -8,10 +8,10 @@ export default function ExperienceList() {
       {experiences.map((exp) => (
         <div key={exp.slug} className="experience-item">
           <h3 className="company-location">
-            {exp.metadata.company} - {exp.metadata.location}
+            {exp.metadata.company} - {exp.metadata.title}
           </h3>
           <h2 className="date">
-            {exp.metadata.title}{" "}
+            {exp.metadata.location}{" "}
             {formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}
           </h2>
           <p className="description">{exp.metadata.description}</p>
