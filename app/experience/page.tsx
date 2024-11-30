@@ -15,20 +15,24 @@ export default function ExperiencePage() {
         <div className="experience-box">
           <div className="education">
             <h3 className="custom-blue">New York University</h3>
-            <p className="text-sm">
+            <p className="text-sm italic">
               Shanghai & New York{" "}
-              <span className="float-right">Fall '21 - Present</span>{" "}
+              <span className="float-right ">Fall '21 - Present</span>{" "}
             </p>
 
             <p className="text-xs text-gray-450">
-              Courses: Calculus I & II, Discrete Mathematics, Probability and
-              Statistics for Econ, Linear Algebra, Data Structures, Basic
-              Algorithms, Computer Systems Organization, Operating Systems,
-              Databases, Information Visualisation, Mindful Tech Product
-              Management, Quantum Computing, Fundamentals of Machine Learning,
-              Reinforcement Learning, Technologies in Finance (Graduate Course),
-              Computer Vision (Graduate Course), Big Data Science (Graduate
-              Course), Recommender Systems, ML with Graphs, NLP
+              <span className="font-bold italic">Math:</span> Calculus, Discrete
+              Math, Probs and Stats, Linear Algebra, Quantum Computing
+            </p>
+            <p className="text-xs text-gray-450">
+              <span className="font-bold italic">CS Core:</span> Data
+              Structures, Algorithms, Computer Systems Organization, Operating
+              Systems, Databases, Info Visualisation,
+            </p>
+            <p className="text-xs text-gray-450">
+              <span className="font-bold italic">AI/ML:</span> Fundamentals of
+              Machine Learning, Computer Vision, Big Data Science, Recommender
+              Systems, ML with Graphs, NLP
             </p>
           </div>
         </div>
