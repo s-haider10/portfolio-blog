@@ -22,8 +22,8 @@
   :root {
     --sh-class: #5e8dca;
     --sh-identifier: white;
-    --sh-keyword: #83a1c9;
-    --sh-string: #a1a5aa;
+    --sh-string: #83a1c9;
+    --sh-keyword: #a1a5aa;
     --experience-item-bg: #1a1a1a; /* Dark mode background */
   }
   html {
@@ -274,5 +274,13 @@ table {
 }
 
 .leadership p {
+  font-size: 0.8rem; /* Adjust the size as needed */
+}
+
+.awards p {
+  font-size: 0.8rem; /* Adjust the size as needed */
+}
+
+.tutoring p {
   font-size: 0.8rem; /* Adjust the size as needed */
 }

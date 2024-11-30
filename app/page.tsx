@@ -17,27 +17,80 @@ export default function Page() {
 
       <div>
         <p className="mb-6">
-          <strong> Welcome to My Intellectual Journey</strong>
+          <strong>Welcome to My Journey</strong>
         </p>
         <p className="mb-4">
-          Hi, I’m Ali an undergraduate student studying{" "}
-          <strong> Computer Science at NYU</strong>.
+          Hi, I’m Ali, a Computer Science student at <strong>NYU</strong> with a
+          passion for understanding and building intelligent systems.
         </p>
         <p className="mb-4">
-          <strong>Point 1</strong>
+          I’ve always been fascinated by how we can use technology to make life
+          easier and more meaningful. Whether it’s creating personalized
+          recommendations, building smarter educational tools, or solving
+          complex real-world problems, I enjoy working on projects that combine
+          creativity and technical problem-solving.
         </p>
         <p className="mb-4">
-          <strong>Point 2</strong>
+          My curiosity also extends to the cutting edge of{" "}
+          <strong>quantum technologies</strong>, where I’ve had the privilege of
+          exploring their potential under the guidance of{" "}
+          <a
+            href="https://shanghai.nyu.edu/academics/faculty/tim-byrnes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Prof. Tim Byrnes</strong>
+          </a>
+          . This experience has deepened my appreciation for the interplay
+          between physics and computation and continues to inspire me to ask
+          bold questions.
+        </p>
+        <p className="mb-4">
+          Along the way, I’ve had the privilege of learning from and working
+          with incredible mentors, including{" "}
+          <a
+            href="https://cs.nyu.edu/people/faculty.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Prof. Jean Ponce</strong>
+          </a>
+          ,{" "}
+          <a
+            href="https://cs.nyu.edu/people/faculty.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Dr. Annase Bari</strong>
+          </a>
+          , and{" "}
+          <a
+            href="https://cs.nyu.edu/people/faculty.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Dr. Divya Singhvi</strong>
+          </a>
+          . Their guidance has shaped my research interests and approach to
+          solving challenging problems.
+        </p>
+        <p className="mb-4">
+          My journey so far has been about exploring how systems can learn and
+          adapt, just like we do. I’ve worked on exciting projects in areas like{" "}
+          <strong>recommendation systems, computer vision, and NLP</strong>,
+          always aiming to make technology more intuitive and accessible.
         </p>
         <p className="mb-5">
-          <strong>Projects</strong>
+          <strong>Projects</strong>: Here, you’ll find some of my favorite work
+          where I’ve tried to turn ideas into impactful solutions.
         </p>
         <div className="my-8">
           <ProjectPosts />
         </div>
       </div>
       <p className="mb-5">
-        <strong>Blogs</strong>
+        <strong>Blogs</strong>: I also enjoy reflecting on what I’ve learned and
+        sharing thoughts on AI, quantum technologies, and beyond.
       </p>
       <div className="my-8">
         <BlogPosts />

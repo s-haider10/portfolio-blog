@@ -11,6 +11,32 @@ export default function ExperiencePage() {
 
       {/* New Subsections with Styled Boxes */}
       <div className="experience-subsections">
+        <h2 className="font-semibold text-xl text-blue-600">Education</h2>
+        <div className="experience-box">
+          <div className="education">
+            <h3 className="custom-blue">New York University</h3>
+            <p className="text-sm text-gray-700">
+              Location: Shanghai & New York
+            </p>
+            <p className="text-sm text-gray-700">
+              Dates:{" "}
+              <span className="float-right text-gray-600">
+                Fall '21 - Present
+              </span>
+            </p>
+            <p className="font-semibold text-md text-gray-800">
+              Courses: Calculus I & II, Discrete Mathematics, Probability and
+              Statistics for Econ, Linear Algebra, Data Structures, Basic
+              Algorithms, Computer Systems Organization, Operating Systems,
+              Databases, Information Visualisation, Mindful Tech Product
+              Management, Quantum Computing, Fundamentals of Machine Learning,
+              Reinforcement Learning, Technologies in Finance (Graduate Course),
+              Computer Vision (Graduate Course), Big Data Science (Graduate
+              Course), Recommender Systems, ML with Graphs, NLP
+            </p>
+          </div>
+        </div>
+
         <h2 className="font-semibold text-xl">Honors & Awards</h2>
         <div className="experience-box">
           <div className="awards">
@@ -52,7 +78,7 @@ export default function ExperiencePage() {
               <span className="float-right">Spring '23</span>
             </p>
             <p>
-              Secretary General @ NYUSHMUN VI
+              Secretary General @ NYUSHMUN-VI
               <span className="float-right">Spring '23</span>
             </p>
           </div>
