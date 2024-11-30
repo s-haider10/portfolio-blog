@@ -44,7 +44,7 @@ export default function ExperiencePage() {
               <span className="float-right">Spring '24</span>
             </p>
             <p>
-              <strong>Tech Lead & Mentor</strong> <em>Tech@nyu Club</em>{" "}
+              <strong>Tech Lead & Mentor</strong> <em>Tech@NYU </em>{" "}
               <span className="float-right">Fall '23</span>
             </p>
             <p>
