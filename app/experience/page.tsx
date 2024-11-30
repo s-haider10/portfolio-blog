@@ -21,18 +21,18 @@ export default function ExperiencePage() {
             </p>
 
             <p className="text-xs text-gray-450">
-              <span className="font-bold italic">Math:</span> Calculus, Discrete
-              Math, Probs and Stats, Linear Algebra, Quantum Computing
+              <p className="font-bold italic">Math:</p> Calculus, Discrete Math,
+              Probs and Stats, Linear Algebra, Quantum Computing
             </p>
             <p className="text-xs text-gray-450">
-              <span className="font-bold italic">CS Core:</span> Data
-              Structures, Algorithms, Computer Systems Organization, Operating
-              Systems, Databases, Info Visualisation,
+              <p className="font-bold italic">CS Core:</p> Data Structures,
+              Algorithms, Computer Systems Organization, Operating Systems,
+              Databases, Info Visualisation,
             </p>
             <p className="text-xs text-gray-450">
-              <span className="font-bold italic">AI/ML:</span> Fundamentals of
-              Machine Learning, Computer Vision, Big Data Science, Recommender
-              Systems, ML with Graphs, NLP
+              <p className="font-bold italic">AI/ML:</p> Fundamentals of Machine
+              Learning, Computer Vision, Big Data Science, Recommender Systems,
+              ML with Graphs, NLP
             </p>
           </div>
         </div>
@@ -85,27 +85,28 @@ export default function ExperiencePage() {
             </p>
           </div>
         </div>
-        <h2 className="font-semibold text-xl">Course Assistant at NYU</h2>
+        <h2 className="font-semibold text-xl">Tutoring at NYU</h2>
+        <p className="text-sm italic"> Learning Assistant = LA</p>
         <div className="experience-box">
           <div className="tutoring">
             <p>
-              Lead Course Assistant for CS
+              Lead for All CS Tutors
               <span className="float-right custom-blue">
                 Fall '24 - Present
               </span>
             </p>
             <p>
-              Data Structures
+              Data Structures LA
               <span className="float-right custom-blue">
                 Fall '24 - Present
               </span>
             </p>
             <p>
-              Intro to Computer and Data Science
+              Intro to CS & DS LA
               <span className="float-right custom-blue">Spring '23</span>
             </p>
             <p>
-              Intro to Computer Programming
+              Intro to Programming LA
               <span className="float-right custom-blue">Fall '22</span>
             </p>
           </div>
