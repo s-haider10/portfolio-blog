@@ -15,12 +15,12 @@ export default function Page() {
       </h1>
 
       <div>
-        <p className="mb-4">
+        <p className="text-sm mb-4">
           Hi, I'm a senior at <strong>NYU</strong> studying and building
           intelligent systems.
         </p>
 
-        <p className="mb-4">
+        <p className="text-sm mb-4">
           Along the way, I’ve had the privilege of learning from and working
           with incredible mentors, including{" "}
           <a
@@ -50,7 +50,7 @@ export default function Page() {
           solving challenging problems.
         </p>
 
-        <p className="mb-4">
+        <p className="text-sm mb-4">
           My journey so far has been about exploring how systems can learn and
           adapt, just like we do. I’ve worked on exciting projects in areas like{" "}
           <strong>recommendation systems, computer vision, and NLP</strong>,
@@ -58,7 +58,7 @@ export default function Page() {
         </p>
 
         <p className="text-sm mb-4">
-          Recently, I’ve been exploring the intersection of{" "}
+          On the side I’ve been exploring the intersection of{" "}
           <strong>quantum technologies</strong> and computation, exploring their
           potential under the mentorship of{" "}
           <a
