@@ -31,7 +31,7 @@ export default function ExperiencePage() {
               <span className="float-right">Spring '23</span>
             </p>
             <p>
-              Scholar’s Award(full ride) @ Yale YGS
+              Scholar’s Award (full ride) @ Yale YGS
               <span className="float-right">Summer '19</span>
             </p>
           </div>
@@ -48,13 +48,11 @@ export default function ExperiencePage() {
               <span className="float-right">Fall '23</span>
             </p>
             <p>
-              <span className="text-blue-500">
-                Co-Director Tech Consultancy @ NYUSH TAMID Group
-              </span>
-              <span className="float-right">Spring'23</span>
+              Co-Director Tech Consultancy @ NYUSH TAMID Group
+              <span className="float-right">Spring '23</span>
             </p>
             <p>
-              Secretary General NYUSH MUN VI
+              Secretary General @ NYUSHMUN VI
               <span className="float-right">Spring '23</span>
             </p>
           </div>
@@ -63,20 +61,20 @@ export default function ExperiencePage() {
         <div className="experience-box">
           <div className="tutoring">
             <p>
-              <strong>Lead Course Assistant for CS</strong>{" "}
+              Lead Course Assistant for CS
               <span className="float-right">Fall '24 - Present</span>
             </p>
             <p>
-              <strong>Data Structures</strong>{" "}
+              Data Structures
               <span className="float-right">Fall '24 - Present</span>
             </p>
             <p>
-              <strong>Intro to CS & DS</strong>{" "}
+              Intro to Computer and Data Science
               <span className="float-right">Spring '23</span>
             </p>
             <p>
-              <strong>Intro to Computer Programming</strong>{" "}
-              <span className="float-right">Fall'22</span>
+              Intro to Computer Programming
+              <span className="float-right">Fall '22</span>
             </p>
           </div>
         </div>

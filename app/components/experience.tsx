@@ -12,7 +12,9 @@ export default function ExperienceList() {
           </h3>
           <h2 className="date">
             {exp.metadata.location}{" "}
-            {formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}
+            <span className="float-right">
+              {formatDateRange(exp.metadata.startDate, exp.metadata.endDate)}
+            </span>
           </h2>
           <p className="description">{exp.metadata.description}</p>
           <p className="skills">

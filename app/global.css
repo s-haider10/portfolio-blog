@@ -23,7 +23,7 @@
     --sh-class: #5e8dca;
     --sh-identifier: white;
     --sh-keyword: #83a1c9;
-    --sh-string: #a4bddd;
+    --sh-string: #a1a5aa;
     --experience-item-bg: #1a1a1a; /* Dark mode background */
   }
   html {
@@ -268,4 +268,11 @@ table {
 
 .awards em {
   flex: 1; /* Allow the italic text to take available space */
+}
+.custom-blue {
+  color: #83a1c9;
+}
+
+.leadership p {
+  font-size: 0.8rem; /* Adjust the size as needed */
 }
