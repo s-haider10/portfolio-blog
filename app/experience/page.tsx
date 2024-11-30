@@ -15,12 +15,12 @@ export default function ExperiencePage() {
         <div className="experience-box">
           <div className="education">
             <h3 className="custom-blue">New York University</h3>
-            <p className="text-md">
+            <p className="text-sm">
               Shanghai & New York{" "}
               <span className="float-right">Fall '21 - Present</span>{" "}
             </p>
 
-            <p className="text-sm text-gray-300">
+            <p className="text-xs text-gray-450">
               Courses: Calculus I & II, Discrete Mathematics, Probability and
               Statistics for Econ, Linear Algebra, Data Structures, Basic
               Algorithms, Computer Systems Organization, Operating Systems,
