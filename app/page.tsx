@@ -25,27 +25,27 @@ export default function Page() {
           Along the way, I’ve had the privilege of learning from and working
           with incredible mentors, including{" "}
           <a
-            href="https://cs.nyu.edu/people/faculty.html"
+            href="https://whongyi.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Prof. Hongyi Wen</strong>
+          </a>
+          ,{" "}
+          <a
+            href="https://www.di.ens.fr/~ponce/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <strong>Prof. Jean Ponce</strong>
           </a>
-          ,{" "}
-          <a
-            href="https://cs.nyu.edu/people/faculty.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Dr. Annase Bari</strong>
-          </a>
           , and{" "}
           <a
-            href="https://cs.nyu.edu/people/faculty.html"
+            href="https://www.umarsaif.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <strong>Dr. Divya Singhvi</strong>
+            <strong>Dr. Umar Saif</strong>
           </a>
           . Their guidance has shaped my research interests and approach to
           solving challenging problems.
@@ -56,16 +56,27 @@ export default function Page() {
           <strong>recommendation systems, computer vision, and NLP</strong>,
           always aiming to make technology more intuitive and accessible.
         </p>
-        <p className="mb-5">
-          <strong>Projects</strong>:
+
+        <p className="mb-4">
+          Recently, I’ve been inspired by the intersection of{" "}
+          <strong>quantum technologies</strong> and computation, exploring their
+          potential under the mentorship of{" "}
+          <a
+            href="https://shanghai.nyu.edu/academics/faculty/directory/tim-byrnes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Prof. Tim Byrnes</strong>
+          </a>
+          . This experience has given me a profound appreciation for modern
+          physics and its role in shaping the future of computing.
         </p>
+
         <div className="my-8">
           <ProjectPosts />
         </div>
       </div>
-      <p className="mb-5">
-        <strong>Blogs</strong>:
-      </p>
+
       <div className="my-8">
         <BlogPosts />
       </div>
