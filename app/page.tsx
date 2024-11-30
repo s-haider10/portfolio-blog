@@ -16,35 +16,11 @@ export default function Page() {
       </h1>
 
       <div>
-        <p className="mb-6">
-          <strong>Welcome to My Journey</strong>
-        </p>
         <p className="mb-4">
-          Hi, I’m Ali, a Computer Science student at <strong>NYU</strong> with a
-          passion for understanding and building intelligent systems.
+          Hi, a Computer Science student at <strong>NYU</strong> with a passion
+          for understanding and building intelligent systems.
         </p>
-        <p className="mb-4">
-          I’ve always been fascinated by how we can use technology to make life
-          easier and more meaningful. Whether it’s creating personalized
-          recommendations, building smarter educational tools, or solving
-          complex real-world problems, I enjoy working on projects that combine
-          creativity and technical problem-solving.
-        </p>
-        <p className="mb-4">
-          My curiosity also extends to the cutting edge of{" "}
-          <strong>quantum technologies</strong>, where I’ve had the privilege of
-          exploring their potential under the guidance of{" "}
-          <a
-            href="https://shanghai.nyu.edu/academics/faculty/tim-byrnes"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>Prof. Tim Byrnes</strong>
-          </a>
-          . This experience has deepened my appreciation for the interplay
-          between physics and computation and continues to inspire me to ask
-          bold questions.
-        </p>
+
         <p className="mb-4">
           Along the way, I’ve had the privilege of learning from and working
           with incredible mentors, including{" "}
@@ -81,16 +57,14 @@ export default function Page() {
           always aiming to make technology more intuitive and accessible.
         </p>
         <p className="mb-5">
-          <strong>Projects</strong>: Here, you’ll find some of my favorite work
-          where I’ve tried to turn ideas into impactful solutions.
+          <strong>Projects</strong>:
         </p>
         <div className="my-8">
           <ProjectPosts />
         </div>
       </div>
       <p className="mb-5">
-        <strong>Blogs</strong>: I also enjoy reflecting on what I’ve learned and
-        sharing thoughts on AI, quantum technologies, and beyond.
+        <strong>Blogs</strong>:
       </p>
       <div className="my-8">
         <BlogPosts />
